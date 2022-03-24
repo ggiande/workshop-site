@@ -1,0 +1,84 @@
+/* Font for coding */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap");
+/* Pretty Font ~~ Headers */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
+/* Body Font */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Dongle:wght@300;400;700&display=swap");
+
+/* This is the entirety of our page, and so this styling will persist across the whole page. */
+.container {
+  margin: 0 auto; /* Guarantees that the left and right margins will be set to the same size, top and bottom are set to 0 */
+  font-family: "Chakra Petch"; /* Makes our current font name change to Chakra Petch wherever possible in our body */
+}
+
+/* pre is where we stored all of our paragraphs, hthe font  */
+.pre_code_container {
+  font-family: "Inconsolata"; /* Coding Font Style */
+  border: solid black 0.5em; /* Creates a border around our container that is solid, black and has a responsive thickness */
+  border-radius: 0.3em; /* Creates a round edge around our container */
+  background-color: #121212; /* Changes the background color of our container */
+  color: white; /* Changes our text color to white */
+  display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
+  flex-wrap: wrap; /* Tells our elements to wrap around if they run out of space */
+  flex-direction: column; /* Specifies how items are placed in the flex container x/y-axis */
+}
+
+/* Every single paragraph in our terminal or pre element */
+.code_container {
+  margin: 0.25em; /* Places spacing on the outside all around our element */
+  display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
+  flex-wrap: wrap; /* Tells our elements to wrap around if they run out of space */
+  flex-direction: column; /* Specifies how items are placed in the flex container x/y-axis */
+  justify-content: center; /* Centers our element horizontally*/
+  word-break: normal; /* Specifies line break opportunities */
+  white-space: normal; /* Shorthand property for the 'white-space-collapsing' and 'text-wrap' properties. */
+}
+
+/* Portfolio */
+.header_container {
+  display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
+  flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
+  justify-content: center; /* Centers our element horizontally*/
+  font-family: "Comfortaa"; /* Makes our current font name change to Comfortaa */
+  text-decoration: overline; /* Creates an overline above our portfolio header */
+  text-shadow: 3px 3px gray; /* Creates a translation of a gray shadow of our portfolio header  */
+}
+
+/* Houses the meat of our webpage and limits the size of the content */
+.main_container {
+  padding: 1em 0.5em; /* Adds space to the left and right of our element */
+  max-width: 700px; /* Sets the maximum width among all elements inside of this container */
+  margin: 0 auto; /* Guarantees that the left and right margins will be set to the same size, top and bottom are set to 0 */
+}
+
+/* Our navigation links are centered and made to look pretty */
+.nav_container {
+  display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
+  flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
+  justify-content: center; /* Centers our element horizontally*/
+  padding-top: 0.5em; /* Adds space to the top of our element */
+  padding-bottom: 0.5em; /* Adds space to the bottom of our element */
+}
+
+/* Our individual links */
+.nav_links {
+  text-decoration: none; /* Removes any underlines or overlines from our text */
+  margin-left: 0.5em; /* Places spacing on the outside on the left of the element */
+  margin-right: 0.5em; /* Places spacing on the outside on the right of the element */
+  color: black; /* Makes our text color black */
+  font-family: "Comfortaa"; /* Makes our current font name change to Comfortaa */
+}
+
+/* A small division used to make the green line at the bottom of our pre container */
+.terminal {
+  padding-bottom: 0.3rem; /* Adds space to the bottom of our element */
+  padding-top: 0.3rem; /* Adds space to the top of our element */
+  border-bottom: 1px solid green; /* */
+}
+
+/* This does some fancy stuff to place the > above the green line at the bottom */
+#input:before {
+  content: ">"; /* Content is like text that could not exist in the HTML */
+  padding-left: 1rem; /* Adds space to the left of our element */
+  color: green; /* Makes the > a green color */
+}
